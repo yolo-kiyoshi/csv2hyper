@@ -8,6 +8,18 @@ csvファイルからTableau独自のデータ形式であるhyperファイル�
 1. `input/`にhyperファイルで出力したいcsvファイルを配置する
 1. `table_def/`に`input/`に配置したcsvファイルそれぞれに対応するカラム定義(jsonファイル)を配置する
 
+**注意**  
+`input/`、`table_def/`には拡張子を除いて同一の名前のファイルを配置すること。
+```
+.
+├── input
+│   ├── data_1.csv
+│   └── data_2.csv
+└── table_def
+    ├── data_1.json
+    └── data_2.json
+```
+
 ### jsonファイル凡例
 カラム名がkey、データ型やNULL制約のdictをvalueに持たせる。
 
